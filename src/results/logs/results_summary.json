@@ -1,0 +1,26 @@
+[
+  {
+    "model": "CNN_v1",
+    "val_accuracy": 0.3310810923576355,
+    "train_accuracy": 0.7234848737716675,
+    "timestamp": "2026-08-20 13:22"
+  },
+  {
+    "model": "CNN_v2",
+    "val_accuracy": 0.3952702581882477,
+    "train_accuracy": 0.6215909123420715,
+    "params": 121105,
+    "epochs_run": 32,
+    "notes": "GlobalAveragePooling2D invece di Flatten, BatchNorm dopo ogni conv, EarlyStopping + ReduceLROnPlateau",
+    "timestamp": "2026-08-20 14:18"
+  },
+  {
+    "model": "CNN_v3",
+    "val_accuracy": 0.5337837934494019,
+    "train_accuracy": 0.8439394235610962,
+    "params": 476945,
+    "epochs_run": 44,
+    "notes": "4 conv blocks (32-64-128-256) + GAP + BatchNorm, lr=5e-4, consistent val_accuracy monitoring across all callbacks",
+    "timestamp": "2026-08-20 15:58"
+  }
+]
